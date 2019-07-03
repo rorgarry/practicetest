@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<t i t l e >The jQuery S e l e c t o r Example</ t i t l e >
+<s c r i p t type = ” t e x t / j a v a s c r i p t ”
+s r c = ” h t t p s : / / aja x . g o o g l e a p i s . com/ aja x / l i b s / j q u e r y / 2 . 1 . 3 / j q u e r y . min . j s ”>
+</ s c r i p t >
+<l i n k h r ef=”c s s 1 . c s s ” r e l =” s t y l e s h e e t ” type=” t e x t / c s s”>
+<s c r i p t type = ” t e x t / j a v a s c r i p t ” language = ” j a v a s c r i p t ”>
+$ ( document ) . ready ( f u n c ti o n ( ) {
+$ (’# btnChange ’ ) . c l i c k ( f u n c ti o n ( ) {
+$ (’#dvDemo ’ ) . a t t r ( ’ id ’ , ’dvDemoNew ’ ) ;
+$ (’#dvDemoNew ’ ) . html ( ’My New ID i s <b>dvDemoNew</b>. ’ )
+} ) ;
+$ (’# btnReset ’ ) . c l i c k ( f u n c ti o n ( ) {
+$ (’#dvDemoNew ’ ) . a t t r ( ’ id ’ , ’dvDemo ’ ) ;
+$ (’#dvDemo ’ ) . html ( ’My ID i s dvDemo . ’ )
+} ) ;
+} ) ;
+</ s c r i p t >
+</head>
+<body>
+<di v i d=”dvDemo”>
+My ID i s dvDemo .
+</div>
+<br/>
+<i n pu t type=”button ” i d=”btnChange” val u e=” Change ID
+”/>
+<i n pu t type=”button ” i d=”b tnRe se t ” val u e=” Rese t ID
+”/>
+</body>
+</html>
